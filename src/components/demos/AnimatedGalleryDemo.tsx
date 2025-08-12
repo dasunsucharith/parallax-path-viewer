@@ -29,44 +29,46 @@ const IMAGES_3 = [
 export const DemoVariant1 = () => {
   return (
     <div className="relative bg-background ">
-      <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 text-center">
-        <ContainerAnimated>
-          <h1 className="font-serif text-4xl font-extralight  md:text-5xl">
-            Your{" "}
-            <span className=" font-serif font-extralight text-primary">
-              one source
-            </span>
-          </h1>
-        </ContainerAnimated>
-        <ContainerAnimated>
-          <h1 className="font-serif text-4xl font-extralight md:text-5xl">
-            for all your designs
-          </h1>
-        </ContainerAnimated>
+      <section className="relative h-[100svh]">
+        <ContainerStagger className="relative z-[9999] -mb-12 place-self-center px-6 pt-12 text-center">
+          <ContainerAnimated>
+            <h1 className="font-serif text-4xl font-extralight  md:text-5xl">
+              Your{" "}
+              <span className=" font-serif font-extralight text-primary">
+                one source
+              </span>
+            </h1>
+          </ContainerAnimated>
+          <ContainerAnimated>
+            <h1 className="font-serif text-4xl font-extralight md:text-5xl">
+              for all your designs
+            </h1>
+          </ContainerAnimated>
 
-        <ContainerAnimated className="my-4">
-          <p className="leading-normal tracking-tight text-muted-foreground">
-            No waste of time and money, we provide you with
-            <br /> collection of designs to plan your next project.
-          </p>
-        </ContainerAnimated>
+          <ContainerAnimated className="my-4">
+            <p className="leading-normal tracking-tight text-muted-foreground">
+              No waste of time and money, we provide you with
+              <br /> collection of designs to plan your next project.
+            </p>
+          </ContainerAnimated>
 
-        <ContainerAnimated>
-          <Button>
-            Book free call <VideoIcon className="size-4" />
-          </Button>
-          <Button variant={"link"}>
-            About Us
-          </Button>
-        </ContainerAnimated>
-      </ContainerStagger>
-      <div className="pointer-events-none absolute z-10 h-[70vh] w-full "
-      style={{
-            background: "linear-gradient(to right, gray, rebeccapurple, blue)",
-            filter: "blur(84px)",
-            mixBlendMode: "screen",
-          }}
-      />
+          <ContainerAnimated>
+            <Button>
+              Book free call <VideoIcon className="size-4" />
+            </Button>
+            <Button variant={"link"}>
+              About Us
+            </Button>
+          </ContainerAnimated>
+        </ContainerStagger>
+        <div className="pointer-events-none absolute z-10 h-[70vh] w-full "
+          style={{
+                background: "linear-gradient(to right, gray, rebeccapurple, blue)",
+                filter: "blur(84px)",
+                mixBlendMode: "screen",
+              }}
+        />
+      </section>
 
       <ContainerScroll className="relative h-[350vh]">
         <ContainerSticky className="h-[100svh]">
