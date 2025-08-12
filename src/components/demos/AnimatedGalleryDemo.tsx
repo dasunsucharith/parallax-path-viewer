@@ -5,6 +5,7 @@ import { ContainerAnimated,
   GalleryCol,
   GalleryContainer } from "@/components/ui/animated-gallery"
 import { Button } from "@/components/ui/button"
+import { RetroGrid } from "@/components/ui/retro-grid";
 import { VideoIcon } from "lucide-react"
 
 const IMAGES_1 = [
@@ -29,48 +30,33 @@ const IMAGES_3 = [
 export const DemoVariant1 = () => {
   return (
     <div className="relative bg-background ">
-      <section className="relative h-[100svh] grid place-items-center">
+      <section className="relative flex h-[100svh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
         <ContainerStagger className="relative z-[9999] px-6 text-center">
           <ContainerAnimated>
             <h1 className="font-serif text-4xl font-extralight  md:text-5xl">
-              Your{" "}
-              <span className=" font-serif font-extralight text-primary">
-                one source
-              </span>
-            </h1>
-          </ContainerAnimated>
-          <ContainerAnimated>
-            <h1 className="font-serif text-4xl font-extralight md:text-5xl">
-              for all your designs
+              I build websites that<br />don’t just sit there — they work.
             </h1>
           </ContainerAnimated>
 
           <ContainerAnimated className="my-4">
             <p className="leading-normal tracking-tight text-muted-foreground">
-              No waste of time and money, we provide you with
-              <br /> collection of designs to plan your next project.
+              From pixel-perfect designs to code that behaves (mostly), I turn your online ideas into reality<br />fast, functional, and a little bit fabulous.
             </p>
           </ContainerAnimated>
 
           <ContainerAnimated>
             <Button>
-              Book free call <VideoIcon className="size-4" />
+              Work With me
             </Button>
             <Button variant={"link"}>
-              About Us
+              Who's This Guy?
             </Button>
           </ContainerAnimated>
         </ContainerStagger>
-        <div className="pointer-events-none absolute z-10 h-[70vh] w-full "
-          style={{
-                background: "linear-gradient(to right, gray, rebeccapurple, blue)",
-                filter: "blur(84px)",
-                mixBlendMode: "screen",
-              }}
-        />
+        <RetroGrid />
       </section>
 
-      <ContainerScroll className="relative h-[350vh]">
+      <ContainerScroll className="relative h-[350vh] -mt-40">
         <ContainerSticky className="h-[100svh]">
           <GalleryContainer className="">
             <GalleryCol yRange={["-10%", "2%"]} className="-mt-2">
