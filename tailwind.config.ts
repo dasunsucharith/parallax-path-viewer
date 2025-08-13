@@ -20,6 +20,9 @@ export default {
       }
     },
     extend: {
+      fontSize: { // Added fontSize
+        '36px': '36px',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

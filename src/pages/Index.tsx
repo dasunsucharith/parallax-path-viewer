@@ -6,6 +6,9 @@ import AboutUs from "@/components/AboutUs";
 import TrustedClients from "@/components/TrustedClients";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import OurProcess from "@/components/OurProcess";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
@@ -14,7 +17,10 @@ const Index = () => {
       <TrustedClients />
       <Services />
       <Portfolio />
+      <OurProcess />
       <AboutUs />
+      <Testimonials />
+      <Contact />
     </main>
   );
 };

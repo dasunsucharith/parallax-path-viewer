@@ -2,18 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const clientLogos = [
-  '/images/logo-gallery/logo-12.png',
-  '/images/logo-gallery/logo-11.png',
-  '/images/logo-gallery/logo-10.png',
-  '/images/logo-gallery/logo-9.png',
-  '/images/logo-gallery/logo-8.png',
-  '/images/logo-gallery/logo-7.png',
-  '/images/logo-gallery/logo-6.png',
-  '/images/logo-gallery/logo-5.png',
-  '/images/logo-gallery/logo-4.png',
-  '/images/logo-gallery/logo-3.png',
-  '/images/logo-gallery/logo-2.png',
-  '/images/logo-gallery/logo-1.png',
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-12.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-11.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-10.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-9.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-8.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-7.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-6.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-5.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-4.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-3.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-2.png`,
+  `${import.meta.env.BASE_URL}images/logo-gallery/logo-1.png`,
 ];
 
 const containerVariants = {
