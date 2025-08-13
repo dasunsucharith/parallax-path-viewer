@@ -36,7 +36,7 @@ const TrustedClients = () => {
     <section className="py-32 bg-gray-100 dark:bg-gray-800 overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="font-serif text-4xl font-extralight md:text-5xl text-gray-900 dark:text-white mb-8"
+          className="font-serif text-3xl font-extralight md:text-4xl text-gray-900 dark:text-white mb-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -58,13 +58,13 @@ const TrustedClients = () => {
             {/* Duplicate logos for seamless loop */}
             {clientLogos.map((logo, index) => (
               <motion.div key={`duplicate-${index}`} className="flex-shrink-0 w-48 h-24 flex items-center justify-center mx-4" variants={itemVariants} whileHover={{ scale: 1.05 }}>
-                <img src={logo} alt={`Client Logo ${index + 1}`} className="max-h-full max-w-full object-contain" />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </section>
+                  <img src={logo} alt={`Client Logo ${index + 1}`} className="max-h-full max-w-full object-contain" />
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
   );
 };
 

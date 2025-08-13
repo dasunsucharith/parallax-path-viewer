@@ -5,6 +5,7 @@ import { TextRevealDemo } from "@/components/demos/TextRevealDemo";
 import AboutUs from "@/components/AboutUs";
 import TrustedClients from "@/components/TrustedClients";
 import Services from "@/components/Services";
+import Portfolio from "@/components/Portfolio";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <DemoVariant1 />
       <TrustedClients />
       <Services />
+      <Portfolio />
       <AboutUs />
     </main>
   );

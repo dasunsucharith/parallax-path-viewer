@@ -69,7 +69,7 @@ const Services = () => {
     >
       <div className="container mx-auto">
         <motion.h2
-          className="font-serif text-4xl font-extralight md:text-5xl text-gray-900 dark:text-white mb-12 text-center"
+          className="font-serif text-3xl font-extralight md:text-4xl text-gray-900 dark:text-white mb-12 text-center"
           variants={itemVariants}
         >
           Our Services
@@ -78,19 +78,19 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="scale-in group visible cursor-pointer text-left"
+              className="scale-in group visible cursor-pointer text-left h-full"
               style={{ transform: 'translateY(0px) scale(1)' }}
               variants={itemVariants}
             >
               <div
-                className="relative transform overflow-hidden rounded-2xl p-6 shadow-lg transition-all duration-300 group-hover:scale-105 hover:shadow-xl"
+                className="relative transform overflow-hidden rounded-2xl p-6 shadow-lg transition-all duration-300 group-hover:scale-105 hover:shadow-xl min-h-[200px]"
                 style={{
                   background: `url(${service.bgImage})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               >
-                <div className="relative">
+                <div className="relative flex flex-col h-full">
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-white/20">
                     {/* Render Lucide icon */}
                     {service.icon && <service.icon className="h-6 w-6 text-white" />}
@@ -98,7 +98,7 @@ const Services = () => {
                   <h3 className="mb-2 font-serif text-lg font-extralight text-white">
                     {service.title}
                   </h3>
-                  <p className="mb-4 font-sans text-sm text-white/80">
+                  <p className="mb-4 font-sans text-sm text-white/80 flex-grow">
                     {service.description}
                   </p>
                 </div>

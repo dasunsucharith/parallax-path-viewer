@@ -82,3 +82,16 @@ All colors MUST be HSL.
 .group:hover .group-hover\:paused {
   animation-play-state: paused;
 }
+
+/* Override Gallery4 h2 styling */
+.gallery4-section h2 {
+  font-family: var(--font-serif); /* Assuming --font-serif is defined in Tailwind config */
+  font-weight: 200; /* Corresponds to font-extralight */
+  font-size: 1.875rem; /* text-3xl */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .gallery4-section h2 {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+}
