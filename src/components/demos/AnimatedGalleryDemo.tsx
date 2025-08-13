@@ -33,30 +33,30 @@ export const DemoVariant1 = () => {
       <section className="relative flex h-[100svh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
         <ContainerStagger className="relative z-[9999] px-6 text-center">
           <ContainerAnimated>
-            <h1 className="font-serif text-4xl font-extralight  md:text-5xl">
-              I build websites that<br />don’t just sit there — they work.
+            <h1 className="font-serif text-4xl font-extralight  md:text-5xl max-w-2xl mx-auto">
+              We build websites your competitors wish they had
             </h1>
           </ContainerAnimated>
 
           <ContainerAnimated className="my-4">
-            <p className="leading-normal tracking-tight text-muted-foreground">
-              From pixel-perfect designs to code that behaves (mostly), I turn your online ideas into reality<br />fast, functional, and a little bit fabulous.
+            <p className="leading-normal tracking-tight text-muted-foreground max-w-2xl mx-auto">
+              From “hmm” ideas to “heck yes” launches — we design, code, and optimise sites that look great, work flawlessly, and secretly make your rivals jealous.
             </p>
           </ContainerAnimated>
 
           <ContainerAnimated>
             <Button>
-              Work With me
+              Start Your Project
             </Button>
             <Button variant={"link"}>
-              Who's This Guy?
+              See Our Work
             </Button>
           </ContainerAnimated>
         </ContainerStagger>
         <RetroGrid />
       </section>
 
-      <ContainerScroll className="relative h-[350vh] -mt-40">
+      <ContainerScroll className="relative h-[150vh] -mt-60">
         <ContainerSticky className="h-[100svh]">
           <GalleryContainer className="">
             <GalleryCol yRange={["-10%", "2%"]} className="-mt-2">
