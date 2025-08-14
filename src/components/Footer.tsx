@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand/About Section */}
         <motion.div variants={itemVariants}>
-          <h3 className="font-serif text-2xl font-extralight text-gray-900 dark:text-white mb-4">ACME Digital</h3>
+          <h3 className="font-serif text-2xl font-extralight text-gray-900 dark:text-white mb-4"><img src="/acme-logo.svg" alt="ACME Digital Logo" className="h-8" /></h3>
           <p className="text-sm leading-relaxed">Crafting immersive digital experiences with cutting-edge web technologies.</p>
         </motion.div>
 

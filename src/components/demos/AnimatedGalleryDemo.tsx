@@ -31,7 +31,7 @@ const IMAGES_3 = [
 export const DemoVariant1 = () => {
   return (
     <div className="relative bg-background ">
-      <section className="relative flex h-[100svh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+      <section className="relative flex h-[100svh] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background pt-20">
         <ContainerStagger className="relative z-[9999] px-6 text-center">
           <ContainerAnimated>
             <h1 className="font-serif text-4xl font-extralight  md:text-5xl max-w-2xl mx-auto">
