@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import { WarpBackground } from "@/components/ui/warp-background";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -19,13 +21,15 @@ const itemVariants = {
 
 const Contact = () => {
   return (
-    <motion.section
+    <WarpBackground
       className="py-32 px-4 md:px-8 lg:px-16 bg-gray-100 dark:bg-gray-800"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
     >
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
       <div className="container mx-auto text-center">
         <motion.h2
           className="font-serif text-3xl font-extralight md:text-4xl text-gray-900 dark:text-white mb-12"
@@ -72,12 +76,9 @@ const Contact = () => {
               ></textarea>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <button
-                type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-              >
-                Send Message
-              </button>
+              <RainbowButton type="submit" className="w-full">
+              Send Message
+            </RainbowButton>
             </motion.div>
           </form>
 
@@ -96,6 +97,7 @@ const Contact = () => {
         </div>
       </div>
     </motion.section>
+    </WarpBackground>
   );
 };
 

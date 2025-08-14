@@ -7,6 +7,7 @@ import { ContainerAnimated,
 import { Button } from "@/components/ui/button"
 import { RetroGrid } from "@/components/ui/retro-grid";
 import { VideoIcon } from "lucide-react"
+import { RainbowButton } from "../ui/rainbow-button";
 
 const IMAGES_1 = [
   "https://images.unsplash.com/photo-1529218402470-5dec8fea0761?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFkfGVufDB8fDB8fHww",
@@ -44,10 +45,10 @@ export const DemoVariant1 = () => {
             </p>
           </ContainerAnimated>
 
-          <ContainerAnimated>
-            <Button>
+          <ContainerAnimated className="flex justify-center items-center gap-4">
+            <RainbowButton>
               Start Your Project
-            </Button>
+            </RainbowButton>
             <Button variant={"link"}>
               See Our Work
             </Button>
