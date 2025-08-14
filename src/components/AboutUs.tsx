@@ -39,6 +39,7 @@ const AboutUs = () => {
   return (
     <AuroraBackground className="h-auto">
       <motion.section
+        id="about"
         className="py-32 px-4 md:px-8 lg:px-16 overflow-hidden"
         variants={containerVariants}
         initial="hidden"

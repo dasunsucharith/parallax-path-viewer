@@ -64,6 +64,7 @@ const Portfolio = () => {
 
   return (
     <Gallery4
+      id="portfolio"
       className="gallery4-section"
       title="Our Portfolio"
       description="Discover how we've helped clients achieve their goals with our innovative web solutions."

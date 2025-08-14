@@ -38,7 +38,7 @@ const Header = () => {
           layout
           transition={{ type: "spring", stiffness: 120, damping: 14 }}
         >
-          <img src="/acme-logo.svg" alt="ACME Digital Logo" className="h-8" />
+          <img src="acme-logo.svg" alt="ACME Digital Logo" className="h-8" />
         </motion.div>
 
         {/* Navigation */}

@@ -61,6 +61,7 @@ const itemVariants = {
 const Services = () => {
   return (
     <motion.section
+      id="services"
       className="py-32 px-4 md:px-8 lg:px-16 bg-background dark:bg-gray-900"
       variants={containerVariants}
       initial="hidden"

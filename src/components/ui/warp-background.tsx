@@ -54,7 +54,7 @@ export const WarpBackground: React.FC<WarpBackgroundProps> = ({
   children,
   perspective = 100,
   className,
-  beamsPerSide = 3,
+  beamsPerSide = 2,
   beamSize = 5,
   beamDelayMax = 3,
   beamDelayMin = 0,
